@@ -6,6 +6,7 @@
     "deduplicate": "node scripts/deduplicate.js",
     "benchmark:browser": "yarn workspace benchmark browser",
     "build:codesandbox": "lerna run --parallel --scope \"@material-ui/*\" build",
+    "vercel-build": "npm run prepare && next build",
     "release:version": "lerna version --exact --no-changelog --no-push --no-git-tag-version",
     "release:build": "lerna run --parallel --scope \"@material-ui/*\" build",
     "release:changelog": "node scripts/releaseChangelog",
